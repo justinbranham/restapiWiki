@@ -61,7 +61,7 @@ app.route("/articles")
 
   newArticle.save(function(err){
     if (!err){
-      res.send("Successfully added a new article.");
+      res.sendFile(__dirname + '/success.html');
     } else {
       res.send(err);
     }
@@ -72,7 +72,7 @@ app.route("/articles")
 
   Article.deleteMany(function(err){
     if (!err){
-      res.send("Successfully deleted all articles.");
+      res.send("***Successfully deleted all articles.***");
     } else {
       res.send(err);
     }
