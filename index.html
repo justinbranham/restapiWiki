@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Justin Branham's REST API</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-container">
+        <h1>I'm Justin.</h1>
+        <h2 class="subtitle">This is my REST API. Submit somthing below or access data by adding /articles to the end of the URL.</h2>
+    </div>
+    <div>
+        <form method="POST" action="/articles">
+            <p>
+                title <input type="text" name="title">
+                content<input type="text" name="content">
+            </p>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+</body>
